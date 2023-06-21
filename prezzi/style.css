@@ -1,0 +1,60 @@
+body {
+    background: linear-gradient(to right, #62dd8b, #23774d);
+    scroll-behavior: smooth; 
+}
+
+.header {
+    display: flex;
+  }
+  
+/* Use percentages for images and columns */  
+.left {
+    width: 25%; 
+    display: flex;
+    position: center;
+}
+
+.right {
+    width: 75%;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    font-size: 4rem; 
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+.box {
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 40px rgba(0,0,0,.2);     
+    margin: 1%;
+    padding: 7%;     
+    border-radius: 10px;
+} 
+
+/* Use viewport units for font sizes */
+.box summary {
+    font-size: 4.5 rem;
+}   
+
+.box p {
+    font-size: 1.5rem;
+}
+
+a {
+    padding: 1vw 2vw; 
+}
+
+/* Media queries for smaller screens */  
+@media screen and (max-width: 768px) {
+    .left { width: 100%; } 
+    .right { width: 100%; }
+    .box { width: 100%; } 
+    .box:nth-child(3n+1) { width: 100%; }
+}
